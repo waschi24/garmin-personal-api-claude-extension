@@ -1,0 +1,20 @@
+{
+  "name": "garmin-personal-api-mcpb",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only Claude Desktop extension for the official Garmin Connect Personal API",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --platform=node --target=node18 --format=esm --outfile=server/index.js --banner:js=\"import { createRequire } from 'module'; const require = createRequire(import.meta.url);\"",
+    "pack": "npm run build && mcpb pack . garmin-personal-api.mcpb"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "^2.1.2",
+    "esbuild": "^0.28.2"
+  }
+}

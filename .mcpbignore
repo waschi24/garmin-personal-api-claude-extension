@@ -1,0 +1,8 @@
+src/
+test/
+node_modules/
+package.json
+package-lock.json
+.mcpbignore
+*.mcpb
+README.md
