@@ -10,13 +10,21 @@
     "url": "https://garmin.vaw.be"
   },
   "homepage": "https://garmin.vaw.be",
+  "documentation": "https://github.com/wimva/garmin-personal-api-claude-extension#readme",
+  "support": "https://github.com/wimva/garmin-personal-api-claude-extension/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wimva/garmin-personal-api-claude-extension"
+  },
   "icon": "icon.png",
   "server": {
     "type": "node",
     "entry_point": "server/index.js",
     "mcp_config": {
       "command": "node",
-      "args": ["${__dirname}/server/index.js"],
+      "args": [
+        "${__dirname}/server/index.js"
+      ],
       "env": {
         "GARMIN_PERSONAL_API_KEY": "${user_config.api_key}"
       }
@@ -32,33 +40,112 @@
     }
   },
   "tools": [
-    { "name": "check_connection", "description": "Check that the key works and show basic profile settings" },
-    { "name": "get_sleep", "description": "Sleep for one night: stages, score, respiration, resting HR" },
-    { "name": "get_sleep_range", "description": "Sleep summaries for up to 31 nights" },
-    { "name": "get_hrv", "description": "Overnight HRV for one night" },
-    { "name": "get_hrv_range", "description": "HRV summaries over a date range" },
-    { "name": "get_daily_summaries", "description": "Daily totals: resting HR, steps, calories, stress, Body Battery" },
-    { "name": "get_heart_rate", "description": "All-day heart rate for one day" },
-    { "name": "get_spo2", "description": "Blood oxygen (Pulse Ox) for one day" },
-    { "name": "get_body_battery", "description": "Body Battery per day over a date range" },
-    { "name": "get_stress", "description": "Daily stress for up to 28 days" },
-    { "name": "get_steps", "description": "Daily steps for up to 28 days" },
-    { "name": "search_activities", "description": "Find recorded activities" },
-    { "name": "get_activity", "description": "Full details for one activity" },
-    { "name": "get_activity_workouts", "description": "Structured workout followed during an activity" },
-    { "name": "get_weight", "description": "Weight, body composition and weight goals" },
-    { "name": "get_fitness_age", "description": "Garmin Fitness Age" },
-    { "name": "get_hydration", "description": "Logged fluid intake" },
-    { "name": "get_food_log", "description": "Foods and meals logged for a day" },
-    { "name": "get_heart_rate_zones", "description": "Saved heart rate zones" },
-    { "name": "get_menstrual_cycle", "description": "Menstrual cycle summary and day view" },
-    { "name": "get_endpoint", "description": "Advanced: read another Personal API endpoint by path" }
+    {
+      "name": "check_connection",
+      "description": "Check that the key works and show basic profile settings"
+    },
+    {
+      "name": "get_sleep",
+      "description": "Sleep for one night: stages, score, respiration, resting HR"
+    },
+    {
+      "name": "get_sleep_range",
+      "description": "Sleep summaries for up to 31 nights"
+    },
+    {
+      "name": "get_hrv",
+      "description": "Overnight HRV for one night"
+    },
+    {
+      "name": "get_hrv_range",
+      "description": "HRV summaries over a date range"
+    },
+    {
+      "name": "get_daily_summaries",
+      "description": "Daily totals: resting HR, steps, calories, stress, Body Battery"
+    },
+    {
+      "name": "get_heart_rate",
+      "description": "All-day heart rate for one day"
+    },
+    {
+      "name": "get_spo2",
+      "description": "Blood oxygen (Pulse Ox) for one day"
+    },
+    {
+      "name": "get_body_battery",
+      "description": "Body Battery per day over a date range"
+    },
+    {
+      "name": "get_stress",
+      "description": "Daily stress for up to 28 days"
+    },
+    {
+      "name": "get_steps",
+      "description": "Daily steps for up to 28 days"
+    },
+    {
+      "name": "search_activities",
+      "description": "Find recorded activities"
+    },
+    {
+      "name": "get_activity",
+      "description": "Full details for one activity"
+    },
+    {
+      "name": "get_activity_workouts",
+      "description": "Structured workout followed during an activity"
+    },
+    {
+      "name": "get_weight",
+      "description": "Weight, body composition and weight goals"
+    },
+    {
+      "name": "get_fitness_age",
+      "description": "Garmin Fitness Age"
+    },
+    {
+      "name": "get_hydration",
+      "description": "Logged fluid intake"
+    },
+    {
+      "name": "get_food_log",
+      "description": "Foods and meals logged for a day"
+    },
+    {
+      "name": "get_heart_rate_zones",
+      "description": "Saved heart rate zones"
+    },
+    {
+      "name": "get_menstrual_cycle",
+      "description": "Menstrual cycle summary and day view"
+    },
+    {
+      "name": "get_endpoint",
+      "description": "Advanced: read another Personal API endpoint by path"
+    }
   ],
-  "keywords": ["garmin", "garmin connect", "sleep", "hrv", "fitness", "health", "running"],
+  "keywords": [
+    "garmin",
+    "garmin connect",
+    "sleep",
+    "hrv",
+    "fitness",
+    "health",
+    "running"
+  ],
   "license": "MIT",
-  "privacy_policies": ["https://www.garmin.com/privacy"],
+  "privacy_policies": [
+    "https://github.com/wimva/garmin-personal-api-claude-extension#privacy",
+    "https://www.garmin.com/privacy"
+  ],
   "compatibility": {
-    "platforms": ["darwin", "win32"],
-    "runtimes": { "node": ">=18.0.0" }
+    "platforms": [
+      "darwin",
+      "win32"
+    ],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
   }
 }

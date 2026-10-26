@@ -16,5 +16,10 @@
   "devDependencies": {
     "@anthropic-ai/mcpb": "^2.1.2",
     "esbuild": "^0.28.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wimva/garmin-personal-api-claude-extension.git"
+  },
+  "author": "Wim Van Aerschot (Garmin School)"
 }

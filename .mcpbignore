@@ -6,3 +6,6 @@ package-lock.json
 .mcpbignore
 *.mcpb
 README.md
+.git/
+.gitignore
+.github/
