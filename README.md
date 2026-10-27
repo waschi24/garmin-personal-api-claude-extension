@@ -57,6 +57,16 @@ npx mcpb pack . garmin-personal-api.mcpb
 
 `GARMIN_PERSONAL_API_BASE` overrides the API host (used only by the test).
 
+## Deploy on Fly.io
+
+This repository now includes a `Dockerfile`, so Fly.io can detect and build it directly.
+
+```bash
+fly launch
+fly secrets set GARMIN_PERSONAL_API_KEY=your_personal_api_key
+fly deploy
+```
+
 ## License
 
 [MIT](LICENSE)
