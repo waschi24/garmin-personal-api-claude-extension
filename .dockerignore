@@ -1,0 +1,5 @@
+node_modules
+server
+garmin-personal-api.mcpb
+npm-debug.log*
+.git
